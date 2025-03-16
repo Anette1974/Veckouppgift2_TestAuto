@@ -1,0 +1,42 @@
+1a Vilka strängar matchas av det reguljära uttrycket: "ab" ? Testa era svar på https://regex101.com/
+=> C. "sabotör"
+
+1b Betrakta uttrycket "nisse". Vad skriver jag för att matcha både "Nisse", "NISSE" och "nisse"?
+=> (?i)nisse // Betyder att regex är skiftesokänslig
+
+1c Vilka strängar matchas av "a*n" ?
+* = matchar 0 eller flera valfria tecken
+=> A. "an"
+=> B. "amerikan"
+=> C. "naturlig"
+=> D. "annandag"
+
+1d Vilka strängar matchas av "[ae]n" ?
+matchar e eller e + n
+=> B. "inconsequential"
+
+1e Vilka strängar matchas av "je.+e"?
+. = valfritt tecken, + = 1 eller fler repetitioner av föregående tecken (valfritt tecken i detta fall)
+=> C. "jeppe"
+=> D. "je je"
+
+1f Vilka strängar matchas av "\san?\s"
+\s = mellanslag, ? = 0 eller 1 repetitoner av föregående tecken
+=> C. "    an   na   an   "
+=> D. "be a darling"
+
+1e Skriv ner med egna ord, vad följande uttryck matchar. "Strängar som innehåller…"
+A. "lines?"
+=> Strängar som innehåller line och lines
+
+B. "^a*ö$"
+=> Strängar som börjar på bokstaven a, sedan ska a förekomma 0 eller flera gånger samt sluta på bokstaven ö
+
+C. "[aeiouyåäö]+"
+=> Strängen kan innehålla ovanstående tecken valfritt antal gånger
+
+D. "[123456789]\d*"
+=>Strängen matchar först enskilt på siffrorna 1-9 och därefter enskilt på siffrorna 0-9, 0 eller flera gånger
+
+E. "\d{4}-\d{2}-\d{2}
+=>Strängen matchar fyra siffror i rad, följt av tankstreck och ytterligare 2 siffror i rad och avslutas med tankstreck och 2 siffror i rad
