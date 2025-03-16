@@ -1,0 +1,30 @@
+4 Skriv ett regex som matchar ett pengavärde i siffror. Exempel på värden som ska matchas:
+200 kr
+12,50 kr
+0,35 kr
+
+\d+,?\d*\skr$
+
+
+
+5a Skriv ett regex som matchar en e-postadress (användarnamn@server.domän) enligt följande icke kompletta regler.
+ - användarnamn kan innehålla bokstäver, siffror och specialtecknen som punkt och bindestreck
+ - server kan innehålla samma sorts tecken
+ - domän kan innehålla bokstäver och siffror
+
+[A-Za-z0-9\.\-]+[@][A-Za-z0-9\.\-]+[.][A-Za-z0-9]+
+
+användarnamn => [A-Za-z0-9\.\-]+
+=> @
+server => [A-Za-z0-9\.\-]+
+=> [.]
+domän => [A-Za-z0-9]+
+
+
+5b Gör ett regex som matchar en komplett e-postadress enligt specifikationen i artikeln här:
+https://snov.io/knowledgebase/what-is-a-valid-email-address-format/
+EJ FÄRDIG RegEx
+^(?![\.])[A-Za-z0-9\.\-_]+^(?![\.])
+
+
+
