@@ -11,7 +11,11 @@ få hjälp med hur en sprint retrospective genomförs med hjälp av lejonmanen a
 Implicit = underförstått, testas indirekt
 Explicit = uttryckligen, testas direkt
 
-TC1. Jag har en dator och är uppkopplad mot internet (Implicit)
-TC2. Starta valfri web browser och navigera till https://lejonmanen.github.io/agile-helper/
-TC3. Klicka på knappen "Last" mitt på sidan
-TC4. Klicka på knappen "End the sprint by evaluating your work in Sprint retrospective"
+Scenario:
+1. Jag har en dator och är uppkopplad mot internet (Implicit)
+2. Starta valfri web browser och navigera till https://lejonmanen.github.io/agile-helper/
+3. Klicka på knappen "Last"
+4. Klicka på knappen "End the sprint by evaluating your work in Sprint retrospective"
+5. Verifiera att rubriken <h> "Sprint retrospective" visas på sidan
+6. Klicka på knappen "The sprint is complete"
+6. Verifiera att "Sprint retrospective" sidan stängts och genom att verifiera knappen "Start over" visas som översta knapp på sidan

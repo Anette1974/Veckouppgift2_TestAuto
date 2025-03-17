@@ -1,0 +1,74 @@
+3 Öva på user stories
+Skapa user stories som beskriver funktionaliteten i https://lejonmanen.github.io/agile-helper/
+För varje user story ska du skriva ett scenario. Målet är att all befintlig funktionalitet ska täckas in av en user story -
+alla knappar ska bli klickade minst en gång.
+Gör gärna den här uppgiften tillsammans med klasskamrater, så ni kan diskutera era scenarion, skillnader och likheter.
+
+
+Precondition för alla US: En dator med internetuppkoppling
+
+[US1]
+Story: Som en användare, vill jag se mötet "sprint planning" som utspelar sig första dagen på en sprint, så att jag vet vad jag ska göra på mötet.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/
+Klicka på knappen med texten "First"
+Klicka på knappen vars text innehåller "Sprint planning"
+Kontrollera att ett <dialog> element visas på sidan, som innehåller en rubrik <h> med texten "Sprint planning"
+Hovra över varje steg och se att "ikonen" längst till vänster blir markerad
+Verifiera att steg fyra innehåller texten "a digital tool" och att det finns en klickbar länk som öppnas i ny tab
+Klicka på knappen vars text innehåller "Ok we're done"
+Klicka på knappen vars text innehåller "Start over"
+Verifiera att du är tillbaks på startsidan genom att texten "What day of the sprint is it?" visas på sidan
+
+[US2]
+Story: Som en användare, vill jag se mötet "Daily standup" som utspelar sig varje dag i en sprint, så att jag vet vad jag ska göra på mötet.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/
+Klicka på knappen med texten "First"
+Klicka på knappen vars text innehåller "Daily standup"
+Kontrollera att ett <dialog> element visas på sidan, som innehåller en rubrik <h> med texten "Daily standup"
+Kontrollera att det finns en knapp var text innehåller "10 minutes"
+Klicka på knappen
+Kontrollera att timern räknar ner från 10 till 9
+Klicka på knappen vars text innehåller "Ok we're done"
+Klicka på knappen vars text innehåller "Start over"
+Verifiera att du är tillbaks på startsidan genom att texten "What day of the sprint is it?" visas på sidan
+
+****************************************************************************
+Note till mig själv, ej färdigt. Fortsätt med följande US:
+
+Knappen Somewhere in the middle
+
+	Knapp - Start over
+
+	Knapp - Start every day with Daily standup (samma som i "First" ??)
+			Knapp för att starta timer "10 minuter"
+			Knapp "Ok we're done!"
+
+
+Knappen Last
+
+	Knapp - Start over
+
+
+	Knapp - Start every day with Daily standup (samma som i "First" ??)
+			Knapp för att starta timer "10 minuter"
+			Knapp "Ok we're done!"
+
+	Knapp - Present your work to the product owner during Sprint review
+			Knapp - Ok we-re done. Onwards to retrospective!
+
+	Knapp - End the sprint by evaluating your work in Sprint retrospective
+			Knapp - The sprint is complete
+
+
+
+
+
+
+
+
+
+
